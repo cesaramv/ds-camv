@@ -1,0 +1,75 @@
+@mixin camv-theme-color($color) {
+  --camv-theme-color-900: var(--color-#{$color}-900);
+
+  --camv-theme-color-700: var(--color-#{$color}-700);
+
+  --camv-theme-color-400: var(--color-#{$color}-400);
+
+  --camv-theme-color-200: var(--color-#{$color}-200);
+}
+
+@mixin camv-theme-gradient($color) {
+  --camv-theme-gradient-top-900: var(--gradient-#{$color}-top-900);
+
+  --camv-theme-gradient-right-900: var(--gradient-#{$color}-right-900);
+
+  --camv-theme-gradient-bottom-900: var(--gradient-#{$color}-bottom-900);
+
+  --camv-theme-gradient-left-900: var(--gradient-#{$color}-left-900);
+
+  --camv-theme-gradient-top-700: var(--gradient-#{$color}-top-700);
+
+  --camv-theme-gradient-right-700: var(--gradient-#{$color}-right-700);
+
+  --camv-theme-gradient-bottom-700: var(--gradient-#{$color}-bottom-700);
+
+  --camv-theme-gradient-left-700: var(--gradient-#{$color}-left-700);
+}
+
+:root {
+  @include camv-theme-color('blue');
+  @include camv-theme-gradient('blue');
+  --border-1: 1px;
+}
+
+.camv-theme {
+  &--blue {
+    @include camv-theme-color('blue');
+    @include camv-theme-gradient('blue');
+  }
+
+  &--navy {
+    @include camv-theme-color('navy');
+    @include camv-theme-gradient('navy');
+  }
+
+  &--ocher {
+    @include camv-theme-color('ocher');
+    @include camv-theme-gradient('ocher');
+  }
+
+  &--amathyst {
+    @include camv-theme-color('amathyst');
+    @include camv-theme-gradient('amathyst');
+  }
+
+  &--success {
+    @include camv-theme-color('success');
+    @include camv-theme-gradient('success');
+  }
+
+  &--info {
+    @include camv-theme-color('info');
+    @include camv-theme-gradient('info');
+  }
+
+  &--alert {
+    @include camv-theme-color('alert');
+    @include camv-theme-gradient('alert');
+  }
+
+  &--danger {
+    @include camv-theme-color('danger');
+    @include camv-theme-gradient('danger');
+  }
+}

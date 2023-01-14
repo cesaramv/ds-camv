@@ -1,0 +1,31 @@
+.camv-card {
+  position: relative;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--spacing-24);
+  box-shadow: var(--z-bottom-lighter-16);
+  background: var(--color-carbon-lighter-50);
+
+  &__title {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: var(--spacing-24) var(--spacing-8);
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--color-carbon-darker-1000);
+
+    & + .camv-card__body {
+      padding-top: 0rem;
+    }
+  }
+
+  &__body {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: var(--spacing-16) var(--spacing-8);
+    box-sizing: border-box;
+  }
+}

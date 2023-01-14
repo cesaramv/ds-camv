@@ -1,0 +1,144 @@
+
+@mixin camv-gradient($name, $token, $color1, $color2) {
+  --gradient-#{$name}-top-#{$token}: linear-gradient(
+    0deg,
+    #{$color1} 0%,
+    #{$color2} 100%
+  );
+
+  --gradient-#{$name}-right-#{$token}: linear-gradient(
+    90deg,
+    #{$color1} 0%,
+    #{$color2} 100%
+  );
+
+  --gradient-#{$name}-bottom-#{$token}: linear-gradient(
+    180deg,
+    #{$color1} 0%,
+    #{$color2} 100%
+  );
+
+  --gradient-#{$name}-left-#{$token}: linear-gradient(
+    270deg,
+    #{$color1} 0%,
+    #{$color2} 100%
+  );
+}
+
+:root {
+  @include camv-gradient('blue', '900', #0056cb, #00246f);
+
+  @include camv-gradient('blue', '700', #0081ff, #0056cb);
+
+  @include camv-gradient('ocher', '900', #dca85e, #7e5a23);
+
+  @include camv-gradient('ocher', '400', #f8f0e2, #e6c089);
+
+  @include camv-gradient('amathyst', '900', #9240fe, #4600e9);
+
+  @include camv-gradient('amathyst', '400', #f2e6ff, #a869ff);
+
+  @include camv-gradient('success', '900', #00935e, #0b502f);
+
+  @include camv-gradient('success', '700', #00ca82, #117847);
+
+  @include camv-gradient('alert', '900', #ffaa31, #b75f0e);
+
+  @include camv-gradient('alert', '400', #fff3e1, #ffcd84);
+
+  @include camv-gradient('danger', '900', #981b1f, #981b1f);
+
+  @include camv-gradient('danger', '700', #e24c4c, #981b1f);
+
+  @include camv-gradient('danger', '400', #fdeaed, #da6d6e);
+
+  @include camv-gradient('carbon-darker', '1000', #898d95, #1a1c1f);
+
+  @include camv-gradient('carbon-lighter', '200', #ffffff, #dfe5f9);
+
+  --gradient-product-black: radial-gradient(
+    132.98% 166.25% at 81.54% 7.45%,
+    #53575d 0%,
+    #12151c 100%
+  );
+
+  --gradient-product-gold: radial-gradient(
+    132.98% 166.25% at 81.54% 7.45%,
+    #e7d689 0%,
+    #ada377 100%
+  );
+
+  --gradient-product-silver: radial-gradient(
+    132.98% 166.25% at 81.54% 7.45%,
+    #f0f0f0 0%,
+    #989898 100%
+  );
+
+  --gradient-product-bronze: radial-gradient(
+    132.98% 166.25% at 81.54% 7.45%,
+    #c1976a 0%,
+    #8d643c 100%
+  );
+
+  --gradient-product-traveler: radial-gradient(
+    132.98% 166.25% at 81.54% 7.45%,
+    #ffce9d 0%,
+    #d63535 100%
+  );
+
+  --gradient-product-infinitive: radial-gradient(
+    132.98% 166.25% at 81.54% 7.45%,
+    #3071b7 0%,
+    #0c1b2b 100%
+  );
+
+  --gradient-product-regular: linear-gradient(
+    70.53deg,
+    #012e65 13.06%,
+    #0063dc 86.06%
+  );
+
+  --gradient-product-pets: radial-gradient(
+    132.98% 166.25% at 81.54% 7.45%,
+    #00a0d2 0%,
+    #022847 100%
+  );
+
+  --gradient-product-unicef: radial-gradient(
+    132.98% 166.25% at 81.54% 7.45%,
+    #b5ebfb 0%,
+    #00b9f2 100%
+  );
+
+  --gradient-product-tuplus: radial-gradient(
+    132.98% 166.25% at 81.54% 7.45%,
+    #a2efe1 0%,
+    #07a5b2 100%
+  );
+
+  --gradient-segments-advance: linear-gradient(
+    180deg,
+    #0081ff 0%,
+    #0056cb 100%
+  );
+
+  --gradient-segments-preference: radial-gradient(
+    132.98% 166.25% at 81.54% 7.45%,
+    #f0f0f0 0%,
+    #989898 100%
+  );
+
+  --gradient-segments-elite: linear-gradient(180deg, #dca85e 0%, #7e5a23 100%);
+
+  --gradient-overlay-blue: linear-gradient(
+    180deg,
+    rgba(0, 53, 133, 0) 0%,
+    #003585 59.72%
+  );
+
+  --gradient-overlay-white: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    #ffffff 60.42%
+  );
+}

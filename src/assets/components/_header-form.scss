@@ -1,0 +1,51 @@
+.camv-header-form {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: var(--spacing-8);
+  box-sizing: border-box;
+
+  &__content {
+    position: relative;
+    float: left;
+    width: 100%;
+    display: flex;
+  }
+
+  &__title {
+    text-align: center;
+    width: 100%;
+    height: var(--spacing-32);
+    line-height: var(--spacing-32);
+    color: var(--color-carbon-darker-1000);
+    font-weight: var(--font-weight-600);
+    font-size: var(--body2-size);
+    letter-spacing: var(--body2-letter-spacing);
+  }
+
+  &__action {
+    width: 100%;
+
+    &--left {
+      .camv-button--flat {
+        float: left;
+      }
+    }
+
+    &--right {
+      .camv-button--flat {
+        float: right;
+      }
+    }
+
+    .camv-button--flat {
+      padding: 0rem var(--spacing-8);
+      height: var(--spacing-32);
+
+      & > span {
+        height: var(--spacing-16);
+        line-height: var(--spacing-16);
+      }
+    }
+  }
+}

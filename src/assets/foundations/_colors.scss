@@ -1,0 +1,169 @@
+:root {
+  --color-blue-900: rgba(0, 86, 203, 1);
+
+  --color-blue-700: rgba(0, 129, 255, 1);
+
+  --color-blue-400: rgba(86, 176, 255, 1);
+
+  --color-blue-200: rgba(226, 241, 255, 1);
+
+  --color-navy-900: rgba(2, 32, 71, 1);
+
+  --color-navy-700: rgba(0, 53, 133, 1);
+
+  --color-navy-400: rgba(109, 132, 191, 1);
+
+  --color-navy-200: rgba(230, 233, 244, 1);
+
+  --color-ocher-900: rgba(126, 90, 35, 1);
+
+  --color-ocher-700: rgba(220, 168, 94, 1);
+
+  --color-ocher-400: rgba(230, 192, 137, 1);
+
+  --color-ocher-200: rgba(248, 240, 226, 1);
+
+  --color-amathyst-900: rgba(70, 0, 233, 1);
+
+  --color-amathyst-700: rgba(146, 64, 254, 1);
+
+  --color-amathyst-400: rgba(168, 105, 255, 1);
+
+  --color-amathyst-200: rgba(242, 230, 255, 1);
+
+  --color-carbon-lighter-900: rgba(78, 85, 108, 1);
+
+  --color-carbon-lighter-700: rgba(85, 95, 131, 1);
+
+  --color-carbon-lighter-400: rgba(173, 186, 230, 1);
+
+  --color-carbon-lighter-300: rgba(223, 229, 249, 1);
+
+  --color-carbon-lighter-200: rgba(239, 242, 252, 1);
+
+  --color-carbon-lighter-50: rgba(255, 255, 255, 1);
+
+  --color-carbon-darker-1000: rgba(27, 28, 30, 1);
+
+  --color-carbon-darker-900: rgba(51, 51, 51, 1);
+
+  --color-carbon-darker-700: rgba(137, 141, 149, 1);
+
+  --color-carbon-darker-400: rgba(205, 205, 205, 1);
+
+  --color-semantic-success-900: rgba(17, 120, 71, 1);
+
+  --color-semantic-success-700: rgba(0, 202, 130, 1);
+
+  --color-semantic-success-400: rgba(134, 224, 183, 1);
+
+  --color-semantic-success-200: rgba(226, 248, 237, 1);
+
+  --color-semantic-info-900: rgba(46, 71, 131, 1);
+
+  --color-semantic-info-700: rgba(49, 135, 255, 1);
+
+  --color-semantic-info-400: rgba(67, 165, 255, 1);
+
+  --color-semantic-info-200: rgba(227, 242, 255, 1);
+
+  --color-semantic-alert-900: rgba(183, 95, 14, 1);
+
+  --color-semantic-alert-700: rgba(255, 170, 49, 1);
+
+  --color-semantic-alert-400: rgba(255, 205, 132, 1);
+
+  --color-semantic-alert-200: rgba(255, 243, 225, 1);
+
+  --color-semantic-danger-900: rgba(152, 27, 31, 1);
+
+  --color-semantic-danger-700: rgba(226, 76, 76, 1);
+
+  --color-semantic-danger-400: rgba(218, 109, 110, 1);
+
+  --color-semantic-danger-200: rgba(253, 234, 237, 1);
+
+  --color-product-black-700: rgba(26, 28, 31, 1);
+
+  --color-product-black-400: rgba(83, 87, 93, 1);
+
+  --color-product-gold-700: rgba(173, 163, 119, 1);
+
+  --color-product-gold-200: rgba(231, 214, 137, 1);
+
+  --color-product-silver-700: rgba(152, 152, 152, 1);
+
+  --color-product-silver-200: rgba(240, 240, 240, 1);
+
+  --color-product-bronze-700: rgba(141, 100, 60, 1);
+
+  --color-product-bronze-200: rgba(193, 151, 106, 1);
+
+  --color-product-regular-700: rgba(1, 46, 101, 1);
+
+  --color-product-regular-400: rgba(0, 99, 220, 1);
+
+  --color-product-infinitive-700: rgba(12, 27, 43, 1);
+
+  --color-product-infinitive-400: rgba(48, 113, 183, 1);
+
+  --color-product-unicef-400: rgba(0, 185, 242, 1);
+
+  --color-product-unicef-200: rgba(181, 235, 251, 1);
+
+  --color-product-pets-700: rgba(2, 40, 71, 1);
+
+  --color-product-pets-400: rgba(0, 160, 210, 1);
+
+  --color-product-traveler-700: rgba(214, 53, 53, 1);
+
+  --color-product-traveler-200: rgba(255, 206, 157, 1);
+
+  --color-product-tuplus-700: rgba(7, 165, 178, 1);
+
+  --color-product-tuplus-200: rgba(162, 239, 225, 1);
+
+  --color-segments-advance-700: rgba(0, 36, 111, 1);
+
+  --color-segments-advance-400: rgba(0, 86, 203, 1);
+
+  --color-segments-preferente-900: rgba(0, 29, 64, 1);
+
+  --color-segments-preferente-400: rgba(1, 54, 118, 1);
+
+  --color-segments-elite-900: rgba(0, 18, 39, 1);
+
+  --color-segments-elite-700: rgba(0, 36, 79, 1);
+
+  --color-pfm-payments-600: rgba(0, 98, 255, 1);
+
+  --color-pfm-payments-400: rgba(51, 129, 255, 1);
+
+  --color-pfm-payments-200: rgba(102, 161, 255, 1);
+
+  --color-pfm-payments-100: rgba(153, 192, 255, 1);
+
+  --color-pfm-advances-600: rgba(252, 175, 30, 1);
+
+  --color-pfm-advances-400: rgba(253, 191, 75, 1);
+
+  --color-pfm-advances-200: rgba(253, 207, 121, 1);
+
+  --color-pfm-advances-100: rgba(254, 223, 165, 1);
+
+  --color-pfm-transfers-600: rgba(126, 203, 64, 1);
+
+  --color-pfm-transfers-400: rgba(152, 213, 102, 1);
+
+  --color-pfm-transfers-200: rgba(178, 224, 140, 1);
+
+  --color-pfm-transfers-100: rgba(203, 234, 178, 1);
+
+  --color-pfm-buys-600: rgba(124, 60, 187, 1);
+
+  --color-pfm-buys-400: rgba(150, 99, 201, 1);
+
+  --color-pfm-buys-200: rgba(176, 138, 214, 1);
+
+  --color-pfm-buys-100: rgba(204, 177, 228, 1);
+}

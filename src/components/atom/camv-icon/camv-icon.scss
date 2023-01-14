@@ -1,0 +1,24 @@
+:host {
+  display: block;
+}
+.camv-icon {
+  position: relative;
+  float: left;
+  box-sizing: initial;
+  font-size: var(--spacing-24);
+  width: var(--spacing-24);
+  height: var(--spacing-24);
+
+  i {
+    font-family: var(--font-family-icons);
+    display: block;
+    text-transform: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    font-size: inherit;
+    width: inherit;
+    height: inherit;
+    -webkit-font-smoothing: antialiased;
+  }
+}

@@ -1,0 +1,51 @@
+:root {
+  --standard-curve: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --deceleration-curve: cubic-bezier(0, 0, 0.2, 1);
+
+  --acceleration-curve: cubic-bezier(0.4, 0, 1, 1);
+
+  --sharp-curve: cubic-bezier(0.4, 0, 0.6, 1);
+
+  --camv-animation-delay: 30ms;
+
+  --camv-animation-duration: 270ms;
+}
+
+.page-fade-in-left-big {
+  animation-name: fadeInLeftBig;
+  animation-duration: var(--camv-animation-duration);
+  animation-delay: var(--camv-animation-delay);
+  animation-fill-mode: both;
+  animation-timing-function: var(--standard-curve);
+}
+
+.page-fade-in-right-big {
+  animation-name: fadeInRightBig;
+  animation-duration: var(--camv-animation-duration);
+  animation-delay: var(--camv-animation-delay);
+  animation-fill-mode: both;
+  animation-timing-function: var(--standard-curve);
+}
+
+@keyframes fadeInLeftBig {
+  from {
+    opacity: 0;
+    transform: translate3d(-125%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRightBig {
+  from {
+    opacity: 0;
+    transform: translate3d(125%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

@@ -1,0 +1,55 @@
+.camv-chip {
+  position: relative;
+  float: left;
+  max-width: 100%;
+  height: var(--spacing-40);
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: var(--spacing-32);
+  background: var(--color-carbon-lighter-50);
+  border: var(--border-1) solid var(--color-carbon-lighter-400);
+
+  &__content {
+    position: relative;
+    float: left;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0rem var(--spacing-4);
+  }
+
+  &__info {
+    position: relative;
+    float: left;
+    margin: auto;
+
+    .camv-icon {
+      color: var(--color-blue-700);
+      margin-left: var(--spacing-8);
+    }
+  }
+
+  &__label {
+    padding: 0rem var(--spacing-8);
+    margin: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    label {
+      color: var(--color-carbon-lighter-700);
+      font-weight: var(--font-weight-500);
+      font-size: var(--smalltext-size);
+      letter-spacing: var(--smalltext-letter-spacing);
+    }
+  }
+
+  &__action {
+    margin: auto;
+    padding-right: var(--spacing-4);
+
+    .camv-icon {
+      color: var(--color-carbon-lighter-700);
+    }
+  }
+}

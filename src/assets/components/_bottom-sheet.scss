@@ -1,0 +1,63 @@
+.camv-bottom-sheet {
+  &__content {
+    position: fixed;
+    top: initial;
+    right: 0rem;
+    bottom: 0rem;
+    left: 0rem;
+    z-index: 32;
+    transition: top 240ms 0ms var(--deceleration-curve);
+
+    &--visible {
+      top: 0rem;
+
+      .camv-bottom-sheet__component {
+        transform: translateY(0%);
+      }
+
+      .camv-bottom-sheet__backdrop {
+        bottom: 0rem;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__component {
+    position: absolute;
+    bottom: 0rem;
+    width: 100%;
+    border-radius: var(--spacing-8) var(--spacing-8) 0rem 0rem;
+    overflow: hidden;
+    max-height: calc(100vh - var(--spacing-64));
+    z-index: var(--z-index-4);
+    background: var(--color-carbon-lighter-50);
+    transform: translateY(100%);
+    transition: transform 240ms 0ms var(--deceleration-curve);
+
+    &::before {
+      position: relative;
+      display: block;
+      content: '';
+      width: var(--spacing-32);
+      height: var(--spacing-4);
+      border-radius: var(--spacing-2);
+      margin: var(--spacing-8) calc(50% - var(--spacing-16));
+      background: var(--color-carbon-lighter-400);
+    }
+  }
+
+  &__backdrop {
+    position: absolute;
+    display: block;
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
+    bottom: initial;
+    opacity: 0;
+    z-index: var(--z-index-2);
+    will-change: opacity;
+    background: var(--overlay-blue-80);
+    transition: opacity 240ms 0ms var(--deceleration-curve),
+      bottom 240ms 0ms var(--deceleration-curve);
+  }
+}

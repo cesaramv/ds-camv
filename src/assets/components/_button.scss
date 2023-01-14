@@ -1,0 +1,190 @@
+.camv-button {
+  padding: 0rem var(--spacing-16);
+  font-size: var(--smalltext-size);
+  letter-spacing: var(--smalltext-letter-spacing);
+  height: var(--spacing-40);
+  box-sizing: border-box;
+  display: flex;
+  outline: none;
+  justify-content: center;
+  font-weight: var(--font-weight-500);
+  border-radius: var(--spacing-4);
+
+  &--action {
+    padding: 0rem var(--spacing-2);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    & > span {
+      pointer-events: none;
+    }
+  }
+
+  & > span {
+    display: block;
+    text-align: center;
+    line-height: var(--body2-line-height);
+    margin: auto 0rem;
+  }
+
+  & > .camv-icon {
+    font-size: var(--spacing-24);
+    display: block;
+    margin: auto 0rem;
+
+    &:first-child {
+      margin-right: var(--spacing-8);
+    }
+
+    &:last-child {
+      margin-left: var(--spacing-8);
+    }
+  }
+
+  & > .camv-spinner {
+    margin: auto 0rem;
+
+    &:first-child {
+      margin-right: var(--spacing-8);
+    }
+
+    &:last-child {
+      margin-left: var(--spacing-8);
+    }
+  }
+}
+
+.camv-button--raised {
+  @extend .camv-button;
+  color: var(--color-carbon-lighter-50);
+  background: var(--gradient-blue-bottom-700);
+
+  &:not(:disabled):hover {
+    box-shadow: 0px 8px 8px rgba(0, 86, 203, 0.24);
+  }
+
+  &:focus {
+    background: var(--gradient-blue-bottom-900);
+  }
+
+  &.camv-theme {
+    &--success {
+      background: var(--gradient-success-bottom-700);
+
+      &:not(:disabled):hover {
+        box-shadow: 0px 8px 8px rgba(17, 120, 71, 0.24);
+      }
+
+      &:focus {
+        background: var(--gradient-success-bottom-900);
+      }
+    }
+
+    &--danger {
+      background: var(--gradient-danger-bottom-700);
+
+      &:not(:disabled):hover {
+        box-shadow: 0px 8px 8px rgba(152, 27, 31, 0.24);
+      }
+
+      &:focus {
+        background: var(--gradient-danger-bottom-900);
+      }
+    }
+  }
+}
+
+.camv-button--flat {
+  @extend .camv-button;
+  background: transparent;
+  color: var(--color-blue-700);
+
+  &:not(:disabled):hover {
+    color: var(--color-blue-900);
+  }
+
+  &:not(:disabled):active {
+    color: var(--color-blue-700);
+    background: var(--color-blue-200);
+  }
+
+  &:focus {
+    background: var(--color-blue-200);
+  }
+
+  &.camv-theme {
+    &--amathyst {
+      color: var(--color-amathyst-700);
+
+      &:not(:disabled):hover {
+        color: var(--color-amathyst-900);
+      }
+
+      &:focus {
+        background: var(--color-amathyst-200);
+      }
+    }
+  }
+}
+
+.camv-button--outline {
+  @extend .camv-button;
+  background: transparent;
+  color: var(--color-carbon-lighter-700);
+  border: var(--border-1) solid var(--color-carbon-lighter-400);
+
+  .camv-icon{
+    color: var(--color-blue-700);
+  }
+
+  &:not(:disabled):hover {
+    /* background: var(--color-blue-200); */
+    border: var(--border-1) solid var(--color-blue-700);
+  }
+
+  &:not(:disabled):active {
+    color: var(--color-carbon-lighter-50);
+    background: var(--gradient-blue-bottom-900);
+    .camv-icon{
+      color: var(--color-carbon-lighter-50);
+    }
+  }
+
+  &:focus {
+    color: var(--color-carbon-lighter-1000);
+    background: var(--color-blue-400);
+  }
+
+  &:disabled {
+    opacity: 1;
+    color: var(--color-carbon-lighter-400);
+    background: var(--color-blue-200);
+    border: var(--border-1) solid var(--color-carbon-lighter-400);
+  }
+}
+
+.camv-button--bluescreen {
+  @extend .camv-button;
+  background: transparent;
+  color: var(--color-carbon-lighter-50);
+  border: var(--border-1) solid var(--color-carbon-lighter-50);
+
+  &:not(:disabled):hover {
+    background: var(--overlay-white-20);
+  }
+
+  &:focus {
+    background: var(--gradient-blue-bottom-900);
+    border: var(--border-1) solid var(--color-blue-700);
+  }
+}
+
+.camv-button--note {
+  @extend .camv-button;
+  width: 100%;
+  height: var(--spacing-56);
+  color: var(--color-ocher-900);
+  background: var(--color-semantic-alert-200);
+}

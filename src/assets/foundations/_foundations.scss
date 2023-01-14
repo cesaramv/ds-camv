@@ -1,0 +1,46 @@
+$brand: 'camv';
+
+@import './colors';
+@import './gradients';
+@import './overlays';
+@import './themes';
+@import './spacings';
+@import './elevations';
+@import './typographics';
+@import './animations';
+@import './grids';
+
+html {
+  font-size: var(--font-size-html);
+  font-family: Poppins;
+}
+
+body {
+  position: absolute;
+  top: 0rem;
+  bottom: 0rem;
+  left: 0rem;
+  right: 0rem;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre {
+  margin: 0rem;
+}
+
+.camv-page-app {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
