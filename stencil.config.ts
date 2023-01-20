@@ -3,7 +3,7 @@ import { sass } from '@stencil/sass';
 
 export const config: Config = {
   namespace: 'ds-camv',
-  globalStyle: 'src/global/global.css',
+  globalStyle: 'src/global/global.scss',
   plugins: [sass()],
   outputTargets: [
     {
