@@ -1,0 +1,73 @@
+:host {
+  display: block;
+}
+.btn{
+  background: var(--color-carbon-darker-700);
+  color: var(--color-carbon-darker-1000);
+  border-radius: 4px;
+  border: none;
+  padding: 0 12px;
+  height: 38px;
+  outline: none;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+}
+
+.btn.primary{
+  background: var(--color-blue-700);
+  color: #fff;
+}
+
+.btn.primary:hover{
+  background: var(--color-blue-900);
+}
+
+.btn.secundary{
+  background: var(--color-carbon-darker-1000);
+  color: #fff;
+}
+
+.btn.secundary:hover{
+  background: var(--color-carbon-darker-900);
+}
+
+.btn.tertiary{
+  background: var(--color-pfm-payments-100);
+  color: var(--color-navy-700);
+}
+
+.btn.tertiary:hover{
+  background: var(--color-pfm-payments-200);
+}
+
+.btn.warning{
+  background: var(--color-pfm-advances-400);
+  color: var(--color-navy-700);
+}
+
+.btn.warning:hover{
+  background: var(--color-pfm-advances-600);
+}
+
+.btn.danger{
+  background: var(--color-semantic-danger-700);
+  color: #fff;
+}
+
+.btn.danger:hover{
+  background: var(--color-semantic-danger-900);
+}
+
+.btn.success{
+  background: var(--color-semantic-success-700);
+  color: #fff;
+}
+
+.btn.success:hover{
+  background: var(--color-semantic-success-900);
+}

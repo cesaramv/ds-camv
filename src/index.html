@@ -1,16 +1,58 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-    <title>Stencil Component Starter</title>
-    <link rel="stylesheet" href="/build/ds-camv.css">
-    <script type="module" src="/build/ds-camv.esm.js"></script>
-    <script nomodule src="/build/ds-camv.js"></script>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <title>Stencil Component Starter</title>
+  <link rel="stylesheet" href="/build/ds-camv.css">
+  <script type="module" src="/build/ds-camv.esm.js"></script>
+  <script nomodule src="/build/ds-camv.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <h3>Buttons</h3>
+    </div>
+    <div class="row space-between">
+      <camv-button id="primary" class-names="primary" text="Button"></camv-button>
+      <camv-button class-names="secundary" text="Send"></camv-button>
+      <camv-button class-names="tertiary" text="Record"></camv-button>
+      <camv-button class-names="warning" text="Warning"></camv-button>
+      <camv-button class-names="danger" text="Danger"></camv-button>
+      <camv-button class-names="success" text="Success"></camv-button>
+    </div>
     <camv-icon icon="success"></camv-icon>
     <br><br>
     <camv-label class-names="body2-default" text="Lorem ..."></camv-label>
-  </body>
+  </div>
+  <div class="container">
+    <div class="row">
+      <h3>Modal</h3>
+    </div>
+    <camv-button id="openModal" class-names="primary" text="Open Modal"></camv-button>
+    <div class="row space-between">
+      <camv-modal buttons='[{"text": "Confirm"}, {"text": "Cancel"}]' class-buton="primary" header="Title Modal">Body
+        modal</camv-modal>
+    </div>
+  </div>
+</body>
+<script>
+  const btn = document.querySelector('#primary');
+  btn.addEventListener('click', function () {
+    alert('Hi!, primary')
+  })
+  const btnOpenModal = document.querySelector('#openModal');
+  const modal = document.querySelector('camv-modal');
+
+  btnOpenModal.addEventListener('click', function () {
+    modal.isopen = true;
+  })
+
+  modal.addEventListener('click', function(){
+    console.log("confirmat")
+  })
+</script>
+
 </html>

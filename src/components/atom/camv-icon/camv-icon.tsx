@@ -1,8 +1,9 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h, getAssetPath } from '@stencil/core';
 
 @Component({
   tag: 'camv-icon',
   styleUrl: 'camv-icon.scss',
+  assetsDirs: ['assets'],
   shadow: false,
 })
 export class CamvIcon {
@@ -13,7 +14,8 @@ export class CamvIcon {
   render() {
     return (
       <span class="camv-icon">
-        <i id={this.elementId} class={`camv-icon-${this.icon}`}></i>
+        {/* <i id={this.elementId} class={`camv-icon-${this.icon}`}></i> */}
+        <img src={getAssetPath(`./assets/icon-${this.icon}.svg`)} alt={`${this.icon} icon`} />
       </span>
     );
   }

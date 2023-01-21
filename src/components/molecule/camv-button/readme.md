@@ -1,4 +1,4 @@
-# camv-icon
+# camv-button
 
 
 
@@ -9,22 +9,21 @@
 
 | Property     | Attribute     | Description | Type     | Default     |
 | ------------ | ------------- | ----------- | -------- | ----------- |
-| `classNames` | `class-names` |             | `string` | `''`        |
-| `elementId`  | `element-id`  |             | `string` | `undefined` |
-| `icon`       | `icon`        |             | `string` | `undefined` |
+| `classNames` | `class-names` |             | `string` | `undefined` |
+| `text`       | `text`        |             | `string` | `undefined` |
 
 
 ## Dependencies
 
 ### Used by
 
- - [camv-modal](../../molecule/camv-modal)
+ - [camv-modal](../camv-modal)
 
 ### Graph
 ```mermaid
 graph TD;
-  camv-modal --> camv-icon
-  style camv-icon fill:#f9f,stroke:#333,stroke-width:4px
+  camv-modal --> camv-button
+  style camv-button fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------
