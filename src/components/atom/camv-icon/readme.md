@@ -7,11 +7,11 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type     | Default     |
-| ------------ | ------------- | ----------- | -------- | ----------- |
-| `classNames` | `class-names` |             | `string` | `''`        |
-| `elementId`  | `element-id`  |             | `string` | `undefined` |
-| `icon`       | `icon`        |             | `string` | `undefined` |
+| Property            | Attribute     | Description | Type     | Default     |
+| ------------------- | ------------- | ----------- | -------- | ----------- |
+| `classNames`        | `class-names` |             | `string` | `''`        |
+| `elementId`         | `element-id`  |             | `string` | `undefined` |
+| `icon` _(required)_ | `icon`        |             | `string` | `undefined` |
 
 
 ## Dependencies

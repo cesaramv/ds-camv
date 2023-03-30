@@ -21,6 +21,9 @@ export namespace Components {
         "htmlFor"?: string;
         "text": string;
     }
+    interface CamvLoading {
+        "isopen": boolean;
+    }
     interface CamvModal {
         "buttons": string;
         "classButon": string;
@@ -51,6 +54,12 @@ declare global {
         prototype: HTMLCamvLabelElement;
         new (): HTMLCamvLabelElement;
     };
+    interface HTMLCamvLoadingElement extends Components.CamvLoading, HTMLStencilElement {
+    }
+    var HTMLCamvLoadingElement: {
+        prototype: HTMLCamvLoadingElement;
+        new (): HTMLCamvLoadingElement;
+    };
     interface HTMLCamvModalElement extends Components.CamvModal, HTMLStencilElement {
     }
     var HTMLCamvModalElement: {
@@ -61,6 +70,7 @@ declare global {
         "camv-button": HTMLCamvButtonElement;
         "camv-icon": HTMLCamvIconElement;
         "camv-label": HTMLCamvLabelElement;
+        "camv-loading": HTMLCamvLoadingElement;
         "camv-modal": HTMLCamvModalElement;
     }
 }
@@ -72,13 +82,16 @@ declare namespace LocalJSX {
     interface CamvIcon {
         "classNames"?: string;
         "elementId"?: string;
-        "icon"?: string;
+        "icon": string;
     }
     interface CamvLabel {
         "classNames"?: string;
         "elementId"?: string;
         "htmlFor"?: string;
         "text"?: string;
+    }
+    interface CamvLoading {
+        "isopen"?: boolean;
     }
     interface CamvModal {
         "buttons"?: string;
@@ -91,6 +104,7 @@ declare namespace LocalJSX {
         "camv-button": CamvButton;
         "camv-icon": CamvIcon;
         "camv-label": CamvLabel;
+        "camv-loading": CamvLoading;
         "camv-modal": CamvModal;
     }
 }
@@ -101,6 +115,7 @@ declare module "@stencil/core" {
             "camv-button": LocalJSX.CamvButton & JSXBase.HTMLAttributes<HTMLCamvButtonElement>;
             "camv-icon": LocalJSX.CamvIcon & JSXBase.HTMLAttributes<HTMLCamvIconElement>;
             "camv-label": LocalJSX.CamvLabel & JSXBase.HTMLAttributes<HTMLCamvLabelElement>;
+            "camv-loading": LocalJSX.CamvLoading & JSXBase.HTMLAttributes<HTMLCamvLoadingElement>;
             "camv-modal": LocalJSX.CamvModal & JSXBase.HTMLAttributes<HTMLCamvModalElement>;
         }
     }

@@ -9,6 +9,9 @@ export const config: Config = {
     {
       type: 'dist',
       esmLoaderPath: '../loader',
+      /* copy: [
+        { src: 'assets', warn: true }
+      ] */
     },
     {
       type: 'dist-custom-elements',
@@ -19,6 +22,10 @@ export const config: Config = {
     {
       type: 'www',
       serviceWorker: null, // disable service workers
+      /* dir: 'www',
+      copy: [
+        { src: 'assets/icons', dest: 'build/assets/icons' }
+      ] */
     },
   ],
 };
